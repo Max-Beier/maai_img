@@ -10,4 +10,5 @@ fn main() {
     let payload: Vec<f64> = Vec::new();
 
     let _my_ai = Maai::new(payload);
+    _my_ai.run();
 }
