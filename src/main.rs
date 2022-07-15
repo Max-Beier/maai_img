@@ -7,8 +7,8 @@ fn main() {
         env!("CARGO_PKG_VERSION")
     );
 
-    let payload: Vec<f64> = vec![1.0, 2.0];
+    let payload: Vec<f64> = vec![1.0, 1.0];
 
-    let _my_ai = Maai::new(payload);
-    _my_ai.run();
+    let _my_ai = Maai::new(payload, 512, 16, 4);
+    _my_ai.inspect();
 }
